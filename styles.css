@@ -22,6 +22,8 @@ a {
 
 body {
   font-family: "Poppins", sans-serif;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 nav {
@@ -167,6 +169,7 @@ ul li a:hover {
 
 #contact {
   margin-top: -80px;
+  padding: 8px 10px;
 }
 
 .subtitle {
@@ -286,11 +289,53 @@ ul li a:hover {
   .action_btns {
     margin: auto;
   }
+  .projects {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1rem;
+    padding: 0 1rem;
+  }
+
+  .project-card {
+    max-width: 100%;
+    padding: 1.2rem;
+  }
+
+  #contact {
+    padding: 64px 16px;
+  }
+
+  .social-links a {
+    font-size: 1.8rem;
+  }
 }
 
 @media (width < 500px) {
+  .section_container {
+    padding: 6rem 1rem 4rem 1rem;
+  }
+
   .projects {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .project-card {
+    width: 100%;
+  }
+
+  #contact {
+    padding: 56px 8px;
+  }
+
+  .social-links {
+    gap: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .social-links a {
+    font-size: 25px;
   }
 }
 
@@ -358,3 +403,4 @@ ul li a:hover {
 .social-links a:hover {
   color: var(--primary-color-dark);
 }
+
