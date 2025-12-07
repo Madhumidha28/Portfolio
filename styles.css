@@ -289,6 +289,7 @@ ul li a:hover {
   .action_btns {
     margin: auto;
   }
+
   .projects {
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 1rem;
@@ -341,9 +342,10 @@ ul li a:hover {
 
 .projects {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 1.5rem;
   margin-top: 2rem;
+  justify-items: center;
 }
 
 .project-card {
@@ -403,4 +405,3 @@ ul li a:hover {
 .social-links a:hover {
   color: var(--primary-color-dark);
 }
-
